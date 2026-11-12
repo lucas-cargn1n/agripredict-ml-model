@@ -11,7 +11,7 @@ st.markdown("Insira as condições do solo e clima para descobrir a cultura mais
 # 2. Carregar os dados e treinar o modelo em cache para não travar a tela
 @st.cache_resource
 def train_model():
-    df = pd.read_csv('crop_recommendation.csv')
+    df = pd.read_csv('Crop_recommendation.csv')
     X = df.drop('label', axis=1)
     y = df['label']
     
